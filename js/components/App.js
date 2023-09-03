@@ -1,6 +1,8 @@
-import AceEditor from './AceEditor.js';
 import Notes from './Notes.js';
+import Editor from './Editor.js';
 export default function App() {
   // TODO: Actually implement a navigation bar
-  return <h1>Hello from React!</h1>;
+  return <div>
+    <Editor />
+  </div>
 }
