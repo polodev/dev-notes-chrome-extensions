@@ -4,9 +4,7 @@
   "version": "1.0",
   "description": "Take notes in Chrome DevTools Panel",
   "permissions": [
-    "activeTab",
-    "storage",
-    "tabs"
+    "storage"
   ],
   "icons": {
     "128": "art/128.png",
@@ -16,11 +14,5 @@
   "background": {
     "service_worker": "background.js"
   },
-  "devtools_page": "devtools.html",
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["devtools.js"]
-    }
-  ]
+  "devtools_page": "devtools.html"
 }

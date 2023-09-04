@@ -4,23 +4,23 @@ import AceEditor from "react-ace";
 import "ace-builds/src-noconflict/mode-jsx";
 const languages = [
   "markdown",
+  "html",
+  "css",
   "javascript",
+  "typescript",
   "php",
+  "mysql",
+  "sql",
   "java",
   "python",
   "xml",
   "ruby",
   "sass",
-  "mysql",
-  "sql",
   "json",
-  "html",
   "handlebars",
   "golang",
   "csharp",
-  "elixir",
-  "typescript",
-  "css"
+  "elixir"
 ];
 
 const themes = [
