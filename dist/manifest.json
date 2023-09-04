@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Developer Notes",
+  "version": "1.0",
+  "description": "Take notes in Chrome DevTools Panel",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "tabs"
+  ],
+  "icons": {
+    "128": "art/128.png",
+    "48": "art/48.png",
+    "16": "art/16.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "devtools_page": "devtools.html",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["devtools.js"]
+    }
+  ]
+}
