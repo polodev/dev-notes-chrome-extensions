@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import AceEditor from "react-ace";
 
-
 import "ace-builds/src-noconflict/mode-jsx";
 const languages = [
   "markdown",
@@ -64,10 +63,11 @@ export default class Editor extends Component {
     console.log("change", newValue);
     this.setState({
       value: newValue
-    });
+    }, this.updateSettings);
   }
   updateSettings() {
     const settings = {
+      value: this.state.value,
       theme: this.state.theme,
       keyboardHandler: this.state.keyboardHandler,
       enableBasicAutocompletion: this.state.enableBasicAutocompletion,
@@ -87,6 +87,7 @@ export default class Editor extends Component {
   componentDidMount() {
     chrome.storage.sync.get("settings", (result) => {
       const settings = result.settings || {
+        value: '',
         theme: "github",
         keyboardHandler: null,
         enableBasicAutocompletion: true,
@@ -98,14 +99,10 @@ export default class Editor extends Component {
         highlightActiveLine: true,
         enableSnippets: false,
         showLineNumbers: true,
-        editorWidth: 800,
-        editorHeight: 600,
+        editorWidth: 1250,
+        editorHeight: 550,
       };
       this.setState(settings);
-
-      const notes = result.notes || [];
-      this.setState({notes});
-
     });
   }
 
@@ -173,8 +170,8 @@ export default class Editor extends Component {
       highlightActiveLine: true,
       enableSnippets: false,
       showLineNumbers: true,
-      editorWidth: 800,
-      editorHeight: 600,
+      editorWidth: 1250,
+      editorHeight: 550,
     };
     this.setTheme = this.setTheme.bind(this);
     this.setKeyboardHandler = this.setKeyboardHandler.bind(this);
@@ -452,5 +449,3 @@ export default class Editor extends Component {
     );
   }
 }
-
-// render(<App />, document.getElementById("example"));
