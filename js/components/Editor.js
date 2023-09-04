@@ -55,6 +55,7 @@ keyboardHandlers.forEach(keyboardHandler => require(`ace-builds/src-noconflict/k
 ert, no-console */
 import "ace-builds/src-min-noconflict/ext-searchbox";
 import "ace-builds/src-min-noconflict/ext-language_tools";
+import "ace-builds/src-min-noconflict/ext-emmet.js";
 
 export default class Editor extends Component {
   onLoad() {
@@ -413,8 +414,8 @@ export default class Editor extends Component {
 
         <div className="row">
           <div className="col-md-9">
-            <button className="btn btn-primary my-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#editorSettingToggle" aria-controls="editorSettingToggle">
-              Settings <svg width={25} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+            <button className="btn btn-primary btn-sm my-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#editorSettingToggle" aria-controls="editorSettingToggle">
+              Settings <svg width={16} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" />
               </svg>
             </button>
@@ -440,7 +441,9 @@ export default class Editor extends Component {
                 enableLiveAutocompletion: this.state.enableLiveAutocompletion,
                 enableSnippets: this.state.enableSnippets,
                 showLineNumbers: this.state.showLineNumbers,
-                tabSize: 2
+                tabSize: 2,
+                scrollPastEnd: 0.5,
+                enableEmmet: true,
               }}
             />
           </div>
