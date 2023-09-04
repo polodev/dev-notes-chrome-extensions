@@ -5,6 +5,7 @@ import "ace-builds/src-noconflict/mode-jsx";
 const languages = [
   "markdown",
   "javascript",
+  "php",
   "java",
   "python",
   "xml",
@@ -89,7 +90,7 @@ export default class Editor extends Component {
       const settings = result.settings || {
         value: '',
         theme: "github",
-        keyboardHandler: null,
+        keyboardHandler: '',
         enableBasicAutocompletion: true,
         mode: "markdown",
         enableLiveAutocompletion: true,
@@ -160,7 +161,7 @@ export default class Editor extends Component {
     this.state = {
       value: '',
       theme: "github",
-      keyboardHandler: null,
+      keyboardHandler: '',
       enableBasicAutocompletion: true,
       mode: "markdown",
       enableLiveAutocompletion: true,
@@ -241,7 +242,7 @@ export default class Editor extends Component {
                     onChange={this.setKeyboardHandler}
                     value={this.state.keyboardHandler}
                   >
-                    <option value="ace">Ace</option>
+                    <option value="">Ace (Default)</option>
                     {keyboardHandlers.map(keyboardHandler => (
                       <option key={keyboardHandler} value={keyboardHandler}>
                         {keyboardHandler}
