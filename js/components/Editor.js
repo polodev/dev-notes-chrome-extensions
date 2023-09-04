@@ -186,7 +186,7 @@ export default class Editor extends Component {
   render() {
     return (
       <div className="editor-wrapper">
-        <div className="offcanvas offcanvas-start" tabindex="-1" id="editorSettingToggle" aria-labelledby="editorSettingToggleLabel">
+        <div className="offcanvas offcanvas-start" tabIndex="-1" id="editorSettingToggle" aria-labelledby="editorSettingToggleLabel">
           <div className="offcanvas-header">
             <h5 className="offcanvas-title" id="offcanvasExampleLabel">Settings</h5>
             <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
