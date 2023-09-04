@@ -11,7 +11,7 @@ chrome.runtime.onInstalled.addListener(function() {
     showGutter: true,
     showPrintMargin: true,
     highlightActiveLine: true,
-    enableSnippets: false,
+    enableSnippets: true,
     showLineNumbers: true,
     editorWidth: 1250,
     editorHeight: 550,
