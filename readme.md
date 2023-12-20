@@ -4,8 +4,6 @@ Absolutely, crafting a README.md file for your Chrome extension is crucial for p
 
 # Dev Notes Code Editor Extension
 
-![Dev Notes Code Editor](link-to-your-extension-icon)
-
 ### Overview
 
 The **Dev Notes Code Editor** extension is a versatile tool designed to enhance your development workflow by integrating a powerful code editor directly into Chrome DevTools. With an array of features and customization options, it allows you to seamlessly write, edit, and manage code snippets alongside your browsing experience.
