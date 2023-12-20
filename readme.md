@@ -1,7 +1,3 @@
-Absolutely, crafting a README.md file for your Chrome extension is crucial for providing users with a comprehensive understanding of its features and functionalities. Here's a sample README.md content for your extension:
-
----
-
 # Dev Notes Code Editor Extension
 
 ### Overview
