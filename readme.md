@@ -22,13 +22,19 @@ The **Dev Notes Code Editor** extension is a versatile tool designed to enhance 
 
 Get started by adding the extension to your Chrome browser:
 
-[![Download Extension](https://developer.chrome.com/webstore/images/ChromeWebStore_BadgeWBorder_v2_206x58.png)](https://chromewebstore.google.com/detail/cmfnhnhpbbcmjkefopghgadeejncoihl)
 
-![Image 1]('store-images/01-dev-notes.jpg')
+#### Download Extension from 
 
-![Image 2]('store-images/02-dev-notes-settings.jpg')
+<a href="https://developer.chrome.com/webstore/images/ChromeWebStore_BadgeWBorder_v2_206x58.png">
+  <img src="https://raw.githubusercontent.com/polodev/dev-notes-chrome-extensions/main/store-images/chrome-webstore-logo.png" alt="chrome web store image">
+</a>
 
-![Image 3]('store-images/03-dev-notes-settings-panel.jpg')
+#### Screenshot 
+
+<div> <img src="https://raw.githubusercontent.com/polodev/dev-notes-chrome-extensions/main/store-images/01-dev-notes.jpg" alt="Dev Notes Screenshot Image"> </div>
+<div> <img src="https://raw.githubusercontent.com/polodev/dev-notes-chrome-extensions/main/store-images/02-dev-notes-settings.jpg" alt="Dev Notes Screenshot Image"> </div>
+<div> <img src="https://raw.githubusercontent.com/polodev/dev-notes-chrome-extensions/main/store-images/03-dev-notes-settings-panel.jpg" alt="Dev Notes Screenshot Image"> </div>
+
 
 
 ### Usage
