@@ -19,7 +19,7 @@ Get started by adding the extension to your Chrome browser:
 
 #### Download Extension from 
 
-<a href="https://developer.chrome.com/webstore/images/ChromeWebStore_BadgeWBorder_v2_206x58.png">
+<a href="https://chromewebstore.google.com/detail/developer-notes/cmfnhnhpbbcmjkefopghgadeejncoihl">
   <img src="https://raw.githubusercontent.com/polodev/dev-notes-chrome-extensions/main/store-images/chrome-webstore-logo.png" alt="chrome web store image">
 </a>
 
